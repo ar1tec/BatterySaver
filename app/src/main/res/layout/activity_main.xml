@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="#009688"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_delete" />
+
+        <ImageButton
+            android:id="@+id/bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="#009688"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_delete" />
+
+        android:padding="10dp"
+        <ImageButton
+            android:id="@+id/brightness"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="#009688"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_delete" />
+
+        <ImageButton
+            android:id="@+id/gps"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="#009688"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_delete" />
+
+        <ImageButton
+            android:id="@+id/screenTimeout"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="#009688"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_delete" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <it.neokree.materialtabs.MaterialTabHost
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/toolbar"
+        app:accentColor="#ffc400"
+        app:primaryColor="#009688" />
+
+</LinearLayout>
